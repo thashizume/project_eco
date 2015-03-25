@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auth name:</strong>
+  <%= @auth.auth_name %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @auth.password_digest %>
+</p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @auth.token %>
+</p>
+
+<%= link_to 'Edit', edit_auth_path(@auth) %> |
+<%= link_to 'Back', auths_path %>
